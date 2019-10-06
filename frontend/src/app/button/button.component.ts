@@ -24,17 +24,21 @@ export class ButtonComponent implements OnInit {
 
     this.postClickNumber = 0;
     this.postButtonLabel = `post Click: ${this.postClickNumber.toString()}`;
+
+    this.buttonService.getLoading();
   }
 
   handleOnGetClick(event): void {
     console.log("handleOnGetClick");
     this.getClickNumber += 1;
     this.getButtonLabel = `get Click: ${this.getClickNumber.toString()}`;
+    this.buttonService.getClick();
   }
 
   handleOnPostClick(event): void {
     console.log("handleOnPostClick");
     this.postClickNumber += 1;
     this.postButtonLabel = `post Click: ${this.postClickNumber.toString()}`;
+    this.buttonService.postClick({ data: this.postClickNumber });
   }
 }

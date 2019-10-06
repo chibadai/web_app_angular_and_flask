@@ -1,3 +1,4 @@
+import { ButtonService } from "./button/button.service";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { ButtonModule } from "primeng/button";
@@ -11,7 +12,7 @@ import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [AppComponent, ButtonComponent, BackendComponent],
   imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule],
-  providers: [],
+  providers: [ButtonService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
