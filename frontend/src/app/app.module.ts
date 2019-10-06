@@ -4,13 +4,13 @@ import { ButtonModule } from "primeng/button";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { ButtonComponent } from './button/button.component';
-import { HttpComponent } from './http/http.component';
-import { BackendComponent } from './backend/backend.component';
+import { ButtonComponent } from "./button/button.component";
+import { BackendComponent } from "./backend/backend.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, HttpComponent, BackendComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule],
+  declarations: [AppComponent, ButtonComponent, BackendComponent],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
