@@ -32,7 +32,9 @@ frontend angular &amp; backend flask(python)
 
 ```conda create -n backend python=3.6```
 
-and clons this repository
+and
+
+```https://github.com/chibadai/web_app_angular_and_flask.git```
 
 # frontend start
 ```
